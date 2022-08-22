@@ -115,8 +115,8 @@ header {
     text-transform: uppercase;
 }
 
-.banner a {
-    display: block;
+.btn {
+    display: inline-block;
     background-color: #b28756;
     color: #fff;
     text-transform: uppercase;
@@ -128,7 +128,7 @@ header {
     border-radius: 20px;
 }
 
-.banner a:hover {
+.btn:hover {
     color: #000;
     transition: 0.5s;
 }
@@ -159,5 +159,158 @@ header {
 }
 
 .default {
-    background-color: red;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    max-width: 1140px;;
+    margin: auto;
+}
+
+.default .light {
+    background-color: #f7f7f7;
+}
+
+.default.light .section-title,
+.default.light .section-body{
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000;
+}
+
+.default.dark .section-title, 
+.default.dark .section-body {
+    color: #fff;
+}
+
+
+
+
+
+
+
+/*
+CSS DE AREAS ESPECIFICAS 
+*/
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.section-aboutus--right {
+    text-align: center;
+    width: 520px;
+}
+
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex:1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+
+.section-service:first-child {
+    border-left: 1px solid #333;
+}
+
+.section-service h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section-service p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects--filters {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 30px;
+    display: inline-block;
+    padding:0px 20px;
+}
+
+.section-projects--filters ul, 
+.section-projects--filters li {
+    list-style: none;
+}
+
+.section-projects--filters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+    color: #555;
+    border-bottom: 3px solid #EEE;
+    cursor: pointer;
+}
+
+.section-projects--filters li:hover,
+.section-projects--filters li.active {
+    border-bottom: 3px solid #b28756;
+}
+
+.section-projects--filters li:first-child {
+    border-left: 0px;
+}
+
+.section-projects--photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo {
+    width: 280px;
 }
